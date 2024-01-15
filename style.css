@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white-paragraphs-: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons-: hsl(0, 0%, 95%);
+}
+
+main {
+  min-height: 100vh;
+  background: var(--Very-light-gray-background-headings-buttons-);
+}
+.car-card {
+  width: 65rem;
+}
+.car-card,
+.car-card-row,
+.details {
+  height: 30rem;
+}
+
+.details h1 {
+  color: var(--Very-light-gray-background-headings-buttons-);
+  font-family: "Big Shoulders Display", sans-serif;
+}
+.details p {
+  color: var(--Transparent-white-paragraphs-);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.details .btn {
+  background: var(--Very-light-gray-background-headings-buttons-);
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.5rem 1.5rem;
+  border-radius: 100vw;
+  border: 2px solid transparent;
+}
+.details .btn:focus-visible,
+.details .btn:hover {
+  background: transparent;
+  border: 2px solid var(--Very-light-gray-background-headings-buttons-);
+  color: var(--Very-light-gray-background-headings-buttons-);
+}
+
+.sedan {
+  background: var(--Bright-orange);
+  border-radius: 1rem 0 0 1rem;
+}
+.sedan .btn {
+  color: var(--Bright-orange);
+}
+
+.suv {
+  background: var(--Dark-cyan);
+}
+.suv .btn {
+  color: var(--Dark-cyan);
+}
+
+.luxury {
+  background: var(--Very-dark-cyan);
+  border-radius: 0 1rem 1rem 0;
+}
+.luxury .btn {
+  color: var(--Very-dark-cyan);
+}

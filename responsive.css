@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+  main {
+    padding: 1rem;
+  }
+  .car-card {
+    width: 25rem !important;
+  }
+  .car-card,
+  .car-card-row {
+    height: fit-content !important;
+  }
+  .details {
+    height: 25rem !important;
+  }
+
+  .sedan {
+    border-radius: 1rem 1rem 0 0 !important;
+  }
+  .luxury {
+    border-radius: 0 0 1rem 1rem !important;
+  }
+}
